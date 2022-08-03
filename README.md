@@ -8,8 +8,8 @@
 - build Speech to text (Arabic) website with serial devices (in this case Arduino UNO) communicate using Web Serial API which it will take the user commands and send them to the serial device useing HTML, CSS, and Javascript. 
 #### Part 2 (Arduino):
 - use of the Arduino `Servo` library set the Robot angles , connect andreceived the text command from the Web Serial API also adjust the arm Robot angles base on the command :
-########  right (180 degree)
-########  left (0 degree)
+######  right (180 degree)
+######  left (0 degree)
 
 ### Run:
 -  Plug in Arduino UNO
