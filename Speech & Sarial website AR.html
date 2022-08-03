@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+
+<head>
+
+  <meta charset="utf-8">
+  
+  <title>Live update (AR)</title>
+  
+</head>
+
+<body>
+
+	<p> 
+	<button id="START"  >START</button> 
+	<button id="STOP"  >STOP</button>
+	</p> 
+
+	<p> <text id="state"></text> </p>
+
+	<p> <h1> <text id="text"></text> </h1> </p>
+
+	<script src="dev.js"> </script>
+
+<!--
+<script type="text/javascript">
+
+
+	START.addEventListener('click',function(){
+	var speech=true;
+	window.SpeechRecognition=window.webkitSpeechRecognition;
+	const recognition= new SpeechRecognition();
+	recognition.interimResults=true;
+	//recognition.continuous = true;
+    recognition.lang = 'ar';
+	
+	recognition.addEventListener('result',e=>{
+	const transcript= Array.from(e.results).map(result=> result[0]).map(result=> result.transcript)
+	text.innerHTML=transcript;
+	})
+	recognition.onstart = function() {
+	state.innerHTML="جاري الاستماع";
+    }
+	
+	recognition.onend = function() {
+    state.innerHTML="توقف عن الاستماع";
+    }
+	
+	
+	if(speech==true){
+	recognition.start();
+
+	}
+	
+	recognition.addEventListener('soundend', function() {
+  console.log('Sound has stopped being received');
+  });
+	
+	
+	})
+  
+</script> 
+-->
+
+	<style>
+
+		p {text-align: center;}
+
+		h1 {text-align: center;}
+
+	</style>
+
+</body>
+
+</html>
